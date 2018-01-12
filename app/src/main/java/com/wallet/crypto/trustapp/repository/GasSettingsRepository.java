@@ -34,7 +34,7 @@ public class GasSettingsRepository implements GasSettingsRepositoryType {
                 ).subscribe();
     }
 
-    private void fetchGasSettings() {
+    public void fetchGasSettings() {
 
         final Web3j web3j = Web3jFactory.build(new HttpService(networkRepository.getDefaultNetwork().rpcServerUrl));
 

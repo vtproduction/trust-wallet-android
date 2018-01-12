@@ -101,6 +101,8 @@ dependencies {
     // Dagger core
     implementation "com.google.dagger:dagger:$project.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$project.daggerVersion"
+    // Scheduler
+    compile 'com.firebase:firebase-jobdispatcher:0.8.5'
     // Dagger Android
     implementation "com.google.dagger:dagger-android-support:$project.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-android-processor:$project.daggerVersion"
