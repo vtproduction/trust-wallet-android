@@ -20,6 +20,8 @@ import static com.wallet.crypto.trustapp.C.POA_NETWORK_NAME;
 import static com.wallet.crypto.trustapp.C.POA_SYMBOL;
 import static com.wallet.crypto.trustapp.C.ROPSTEN_NETWORK_NAME;
 import static com.wallet.crypto.trustapp.C.SOKOL_NETWORK_NAME;
+import static com.wallet.crypto.trustapp.C.TMC_NETWORK_NAME;
+import static com.wallet.crypto.trustapp.C.TMC_SYMBOL;
 
 public class EthereumNetworkRepository implements EthereumNetworkRepositoryType {
 
@@ -32,10 +34,14 @@ public class EthereumNetworkRepository implements EthereumNetworkRepositoryType 
                     "https://mewapi.epool.io/",
                     "https://classic.trustwalletapp.com",
                     "https://gastracker.io/tx/",61, true),
-            new NetworkInfo(POA_NETWORK_NAME, POA_SYMBOL,
-                    "https://core.poa.network/",
-                    "https://poa.trustwalletapp.com",
-                    "https://poaexplorer.com/txid/search/", 99, false),
+			new NetworkInfo(POA_NETWORK_NAME, POA_SYMBOL,
+					"https://core.poa.network/",
+					"https://poa.trustwalletapp.com",
+					"https://poaexplorer.com/txid/search/", 99, false),
+			new NetworkInfo(TMC_NETWORK_NAME, TMC_SYMBOL,
+					"https://core.tomocoin.io/",
+					"https://tomo-trust-wallet.herokuapp.com/",
+					"https://explorer.tomocoin.io", 40686, true),
 			new NetworkInfo(KOVAN_NETWORK_NAME, ETH_SYMBOL,
                     "https://kovan.infura.io/llyrtzQ3YhkdESt2Fzrk",
                     "https://kovan.trustwalletapp.com/",
